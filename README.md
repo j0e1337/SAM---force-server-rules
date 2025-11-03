@@ -9,4 +9,4 @@ This is simple SAM module to make sure the player knows the rules.
 - change the URL with your server rules site
 
 > [!WARNING]
-> Do not remove the Disconnect button as it would violate the [Garry's Mod Server Operator Rules]([https://pages.github.com/](https://wiki.facepunch.com/gmod/Server_Operator_Rules)!
+> Do not remove the Disconnect button as it would violate the [Garry's Mod Server Operator Rules](https://wiki.facepunch.com/gmod/Server_Operator_Rules)!
