@@ -4,8 +4,8 @@ net.Receive("SAM.ForceRules", function()
     local endTime = CurTime() + duration
 
     local frame = vgui.Create("DFrame")
-    frame:SetTitle("Server-Regeln")
-    frame:SetSize(ScrW() * 0.7, ScrH() * 0.7)
+    frame:SetTitle("Server-Rules")
+    frame:SetSize(ScrW() * 0.8, ScrH() * 0.8)
     frame:Center()
     frame:MakePopup()
     frame:SetDraggable(false)
@@ -23,7 +23,7 @@ net.Receive("SAM.ForceRules", function()
     local btnDisconnect = vgui.Create("DButton", container)
     btnDisconnect:Dock(BOTTOM)
     btnDisconnect:SetTall(40)
-    btnDisconnect:SetText("Server verlassen")
+    btnDisconnect:SetText("Disconnect")
     btnDisconnect:SetFont("DermaLarge")
     btnDisconnect:SetTextColor(Color(255, 255, 255))
     btnDisconnect.Paint = function(self, w, h)
@@ -39,7 +39,7 @@ net.Receive("SAM.ForceRules", function()
         local remaining = math.ceil(endTime - CurTime())
 
         if remaining > 0 then
-            self:SetTitle(string.format("Bitte lies die Regeln (%ds verbleibend)", remaining))
+            self:SetTitle(string.format("Please read the rules! (%ds remaining)", remaining))
         else
             self:Close()
         end
@@ -51,6 +51,7 @@ net.Receive("SAM.ForceRules", function()
         end
     end)
 end)
+
 
 
 
