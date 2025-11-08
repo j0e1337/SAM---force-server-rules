@@ -19,7 +19,7 @@ if SERVER then
         ply:UnLock()
     end
 
-    sam.command.set_category("Regeln")
+    sam.command.set_category("Rules")
 
     sam.command.new("forcerules")
         :SetPermission("forcerules", "admin")
@@ -54,4 +54,5 @@ if SERVER then
             end)
         end)
     :End()
+
 end
